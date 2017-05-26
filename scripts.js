@@ -47,5 +47,7 @@ function startTimer() {
 buttons.forEach(button => button.addEventListener('click', startTimer));
 
 document.customForm.addEventListener('submit', function(e) {
-
+  e.preventDefault();
+  const mins = this.minutes.value;    // get the value of input with name="minutes"
+  console.log(mins);
 });

@@ -35,3 +35,5 @@ function displayEndTime(timestamp) {
   const minutes = end.getMinutes();
   endTime.textContent = `Be Back At ${hour > 12 ? hour -12 : hour}:${minutes < 10 ? '0' : ''}${minutes}`;
 }
+
+buttons.forEach(button => button.addEventListener('click', startTimer));

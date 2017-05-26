@@ -27,5 +27,7 @@ function displayTimeLeft(seconds) {
 }
 
 function displayEndTime(timestamp) {
-
+  const end = new Date(timestamp);
+  const hour = end.getHours();
+  const minutes = end.getMinutes();
 }

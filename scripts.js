@@ -50,4 +50,6 @@ document.customForm.addEventListener('submit', function(e) {
   e.preventDefault();
   const mins = this.minutes.value;    // get the value of input with name="minutes"
   console.log(mins);
+  timer(mins * 60);   // convert minutes into seconds
+  this.reset();   // reset form
 });
